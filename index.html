@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio | Nur Nailin Najah</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Poppins & Playfair Display -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,400&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Lucide Icons CDN -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        softPink: '#FFF0F5',
+                        roseGold: '#E8A5B8',
+                        dustyRose: '#D87093',
+                        deepRose: '#9C3D62',
+                        accentPeach: '#FFD1DC',
+                    },
+                    fontFamily: {
+                        sans: ['Poppins', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        .bg-glass {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+        .gradient-text {
+            background: linear-gradient(135deg, #D87093 0%, #9C3D62 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-br from-pink-50 via-purple-50 to-rose-50 text-gray-800 font-sans antialiased min-h-screen">
+
+    <!-- Header / Navbar -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-glass border-b border-pink-100 shadow-sm">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-serif font-bold text-deepRose flex items-center gap-2">
+                <i data-lucide="sparkles" class="w-6 h-6 text-dustyRose"></i>
+                <span>Nailin<span class="text-dustyRose">.</span></span>
+            </a>
+            <nav class="hidden md:flex space-x-8 font-medium text-gray-600">
+                <a href="#tentang" class="hover:text-deepRose transition-colors">Tentang Saya</a>
+                <a href="#pendidikan" class="hover:text-deepRose transition-colors">Pendidikan</a>
+                <a href="#keahlian" class="hover:text-deepRose transition-colors">Keahlian</a>
+                <a href="#cita-cita" class="hover:text-deepRose transition-colors">Cita-cita</a>
+                <a href="#kontak" class="hover:text-deepRose transition-colors">Kontak</a>
+            </nav>
+            <a href="#kontak" class="bg-gradient-to-r from-dustyRose to-deepRose text-white px-5 py-2.5 rounded-full font-medium shadow-md hover:shadow-lg hover:opacity-90 transition-all flex items-center gap-2 text-sm">
+                <i data-lucide="send" class="w-4 h-4"></i> Hubungi Saya
+            </a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="pt-36 pb-20 px-6">
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-12">
+            <!-- Left Column: Text -->
+            <div class="flex-1 text-center md:text-left">
+                <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-pink-100 text-deepRose text-sm font-semibold mb-6 shadow-sm">
+                    <i data-lucide="heart" class="w-4 h-4 fill-dustyRose stroke-none"></i>
+                    Selamat Datang di Portofolio Saya
+                </div>
+                <h1 class="text-4xl md:text-6xl font-serif font-bold text-gray-900 leading-tight mb-4">
+                    Halo, Saya <br><span class="gradient-text">Nur Nailin Najah</span>
+                </h1>
+                <p class="text-lg md:text-xl text-gray-600 leading-relaxed mb-6 font-light">
+                    Saat ini saya adalah siswi <span class="font-semibold text-deepRose">SMK Ma'arif NU Tirto (12 TKJ 1)</span> yang disiplin dan bertanggung jawab.
+                </p>
+                <div class="flex flex-wrap gap-4 justify-center md:justify-start">
+                    <a href="#keahlian" class="bg-deepRose text-white px-7 py-3 rounded-full font-medium shadow-lg hover:bg-opacity-90 transition-all flex items-center gap-2">
+                        <i data-lucide="cpu" class="w-5 h-5"></i> Lihat Keahlian
+                    </a>
+                    <a href="#kontak" class="bg-white text-deepRose border border-pink-200 px-7 py-3 rounded-full font-medium shadow-sm hover:bg-pink-50 transition-all flex items-center gap-2">
+                        <i data-lucide="phone-call" class="w-5 h-5"></i> Kontak
+                    </a>
+                </div>
+            </div>
+
+            <!-- Right Column: Card Illustration -->
+            <div class="flex-1 flex justify-center w-full max-w-md">
+                <div class="relative w-full">
+                    <div class="absolute inset-0 bg-gradient-to-tr from-roseGold to-accentPeach rounded-3xl transform rotate-3 blur-sm"></div>
+                    <div class="relative bg-white/80 backdrop-blur-md p-8 rounded-3xl border border-white/60 shadow-xl text-center">
+                        <div class="w-28 h-28 mx-auto mb-4 rounded-full bg-gradient-to-tr from-pink-200 to-rose-200 flex items-center justify-center shadow-inner border-4 border-white">
+                            <i data-lucide="user" class="w-14 h-14 text-deepRose"></i>
+                        </div>
+                        <h3 class="text-2xl font-serif font-bold text-gray-800">Nur Nailin Najah</h3>
+                        <p class="text-sm text-dustyRose font-medium mb-4">Teknik Komputer & Jaringan</p>
+                        
+                        <div class="bg-pink-50/70 p-4 rounded-2xl text-left space-y-2 text-sm text-gray-700">
+                            <div class="flex items-center gap-3">
+                                <i data-lucide="calendar" class="w-4 h-4 text-dustyRose"></i>
+                                <span>01 Oktober 2008</span>
+                            </div>
+                            <div class="flex items-center gap-3">
+                                <i data-lucide="map-pin" class="w-4 h-4 text-dustyRose"></i>
+                                <span>Pekalongan, Jawa Tengah</span>
+                            </div>
+                            <div class="flex items-center gap-3">
+                                <i data-lucide="check-circle" class="w-4 h-4 text-dustyRose"></i>
+                                <span>Disiplin & Bertanggung Jawab</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tentang Saya / Biodata -->
+    <section id="tentang" class="py-16 px-6">
+        <div class="max-w-4xl mx-auto">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-serif font-bold text-gray-900">Biodata Diri</h2>
+                <div class="w-16 h-1 bg-dustyRose mx-auto rounded-full mt-2"></div>
+            </div>
+
+            <div class="bg-white rounded-3xl p-8 shadow-sm border border-pink-100 grid md:grid-cols-2 gap-6">
+                <div class="flex items-start gap-4">
+                    <div class="p-3 bg-pink-100 text-deepRose rounded-2xl">
+                        <i data-lucide="user-check" class="w-6 h-6"></i>
+                    </div>
+                    <div>
+                        <h4 class="text-sm font-semibold text-gray-400 uppercase tracking-wider">Nama Lengkap</h4>
+                        <p class="text-lg font-medium text-gray-800">Nur Nailin Najah</p>
+                    </div>
+                </div>
+
+                <div class="flex items-start gap-4">
+                    <div class="p-3 bg-pink-100 text-deepRose rounded-2xl">
+                        <i data-lucide="cake" class="w-6 h-6"></i>
+                    </div>
+                    <div>
+                        <h4 class="text-sm font-semibold text-gray-400 uppercase tracking-wider">Tempat, Tanggal Lahir</h4>
+                        <p class="text-lg font-medium text-gray-800">Pekalongan, 01 Oktober 2008</p>
+                    </div>
+                </div>
+
+                <div class="flex items-start gap-4">
+                    <div class="p-3 bg-pink-100 text-deepRose rounded-2xl">
+                        <i data-lucide="graduation-cap" class="w-6 h-6"></i>
+                    </div>
+                    <div>
+                        <h4 class="text-sm font-semibold text-gray-400 uppercase tracking-wider">Status Saat Ini</h4>
+                        <p class="text-lg font-medium text-gray-800">Siswi Kelas 12 TKJ 1</p>
+                    </div>
+                </div>
+
+                <div class="flex items-start gap-4">
+                    <div class="p-3 bg-pink-100 text-deepRose rounded-2xl">
+                        <i data-lucide="building-2" class="w-6 h-6"></i>
+                    </div>
+                    <div>
+                        <h4 class="text-sm font-semibold text-gray-400 uppercase tracking-wider">Sekolah</h4>
+                        <p class="text-lg font-medium text-gray-800">SMK Ma'arif NU Tirto</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Riwayat Pendidikan -->
+    <section id="pendidikan" class="py-16 px-6 bg-white/50">
+        <div class="max-w-4xl mx-auto">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-serif font-bold text-gray-900">Riwayat Pendidikan</h2>
+                <div class="w-16 h-1 bg-dustyRose mx-auto rounded-full mt-2"></div>
+            </div>
+
+            <div class="relative border-l-2 border-pink-200 ml-4 md:ml-32 space-y-8">
+                <!-- SD -->
+                <div class="relative pl-8">
+                    <div class="absolute -left-3 top-1.5 w-6 h-6 bg-dustyRose rounded-full border-4 border-white shadow"></div>
+                    <div class="bg-white p-6 rounded-2xl shadow-sm border border-pink-100">
+                        <span class="text-xs font-semibold px-3 py-1 bg-pink-100 text-deepRose rounded-full">Sekolah Dasar</span>
+                        <h3 class="text-xl font-bold text-gray-800 mt-2">SD Negeri Kauman Wiradesa</h3>
+                        <p class="text-gray-600 text-sm mt-1">Mengembangkan fondasi belajar dasar dan bersosialisasi.</p>
+                    </div>
+                </div>
+
+                <!-- SMP -->
+                <div class="relative pl-8">
+                    <div class="absolute -left-3 top-1.5 w-6 h-6 bg-dustyRose rounded-full border-4 border-white shadow"></div>
+                    <div class="bg-white p-6 rounded-2xl shadow-sm border border-pink-100">
+                        <span class="text-xs font-semibold px-3 py-1 bg-pink-100 text-deepRose rounded-full">Sekolah Menengah Pertama</span>
+                        <h3 class="text-xl font-bold text-gray-800 mt-2">SMP Negeri 02 Wonokerto</h3>
+                        <p class="text-gray-600 text-sm mt-1">Mengasah kedisiplinan dan minat pada dunia teknologi.</p>
+                    </div>
+                </div>
+
+                <!-- SMK -->
+                <div class="relative pl-8">
+                    <div class="absolute -left-3 top-1.5 w-6 h-6 bg-deepRose rounded-full border-4 border-white shadow"></div>
+                    <div class="bg-white p-6 rounded-2xl shadow-sm border border-pink-200">
+                        <span class="text-xs font-semibold px-3 py-1 bg-deepRose text-white rounded-full">Sekolah Menengah Kejuruan</span>
+                        <h3 class="text-xl font-bold text-gray-800 mt-2">SMK Ma'arif NU Tirto</h3>
+                        <p class="text-gray-600 text-sm mt-1">Jurusan Teknik Komputer dan Jaringan (Kelas 12 TKJ 1). Fokus pada jaringan komputer dan administrasi server.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Keahlian Teknik -->
+    <section id="keahlian" class="py-16 px-6">
+        <div class="max-w-4xl mx-auto">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-serif font-bold text-gray-900">Keahlian Jaringan & Server</h2>
+                <p class="text-gray-600 mt-2">Keterampilan teknis yang saya kuasai di bidang Teknik Komputer & Jaringan</p>
+                <div class="w-16 h-1 bg-dustyRose mx-auto rounded-full mt-2"></div>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-6">
+                <!-- Skill 1 -->
+                <div class="bg-white p-6 rounded-3xl shadow-sm border border-pink-100 hover:shadow-md transition-shadow text-center">
+                    <div class="w-14 h-14 mx-auto bg-pink-100 text-deepRose rounded-2xl flex items-center justify-center mb-4">
+                        <i data-lucide="server" class="w-7 h-7"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-800 mb-2">Instalasi aaPanel</h3>
+                    <p class="text-sm text-gray-600">Mampu melakukan instalasi dan konfigurasi web control panel aaPanel untuk pengelolaan server web.</p>
+                </div>
+
+                <!-- Skill 2 -->
+                <div class="bg-white p-6 rounded-3xl shadow-sm border border-pink-100 hover:shadow-md transition-shadow text-center">
+                    <div class="w-14 h-14 mx-auto bg-pink-100 text-deepRose rounded-2xl flex items-center justify-center mb-4">
+                        <i data-lucide="network" class="w-7 h-7"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-800 mb-2">Setting VLAN</h3>
+                    <p class="text-sm text-gray-600">Mengonfigurasi Virtual LAN untuk segmentasi jaringan lokal agar lebih terstruktur dan aman.</p>
+                </div>
+
+                <!-- Skill 3 -->
+                <div class="bg-white p-6 rounded-3xl shadow-sm border border-pink-100 hover:shadow-md transition-shadow text-center">
+                    <div class="w-14 h-14 mx-auto bg-pink-100 text-deepRose rounded-2xl flex items-center justify-center mb-4">
+                        <i data-lucide="router" class="w-7 h-7"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-800 mb-2">Setting MikroTik</h3>
+                    <p class="text-sm text-gray-600">Mengatur router MikroTik mencakup manajemen bandwidth, routing, dan keamanan jaringan.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cita-Cita -->
+    <section id="cita-cita" class="py-16 px-6 bg-gradient-to-r from-pink-100 via-rose-100 to-pink-100">
+        <div class="max-w-4xl mx-auto text-center">
+            <div class="w-16 h-16 bg-white text-deepRose rounded-full flex items-center justify-center mx-auto mb-6 shadow-md">
+                <i data-lucide="briefcase" class="w-8 h-8"></i>
+            </div>
+            <h2 class="text-3xl font-serif font-bold text-gray-900 mb-4">Cita-Cita Masa Depan</h2>
+            <p class="text-2xl font-serif italic text-deepRose max-w-2xl mx-auto leading-relaxed">
+                "Pengusaha"
+            </p>
+            <p class="text-gray-600 mt-4 max-w-xl mx-auto text-sm leading-relaxed">
+                Dengan bekal keterampilan teknologi dan sikap yang disiplin serta bertanggung jawab, saya bercita-cita untuk menjadi seorang pengusaha sukses yang dapat menciptakan lapangan kerja dan memberikan dampak positif bagi lingkungan sekitar.
+            </p>
+        </div>
+    </section>
+
+    <!-- Kontak -->
+    <section id="kontak" class="py-16 px-6">
+        <div class="max-w-4xl mx-auto">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-serif font-bold text-gray-900">Hubungi Saya</h2>
+                <p class="text-gray-600 mt-2">Mari terhubung untuk kerjasama atau konsultasi seputar jaringan</p>
+                <div class="w-16 h-1 bg-dustyRose mx-auto rounded-full mt-2"></div>
+            </div>
+
+            <div class="max-w-md mx-auto bg-white p-8 rounded-3xl shadow-sm border border-pink-100 text-center">
+                <div class="w-16 h-16 mx-auto bg-green-100 text-green-600 rounded-2xl flex items-center justify-center mb-4">
+                    <i data-lucide="phone" class="w-8 h-8"></i>
+                </div>
+                <h3 class="text-lg font-bold text-gray-800 mb-1">Nomor Telepon / WhatsApp</h3>
+                <p class="text-2xl font-bold text-deepRose mb-6">+62 859-6015-6882</p>
+
+                <a href="https://wa.me/6285960156882" target="_blank" class="inline-flex items-center justify-center gap-2 bg-green-500 hover:bg-green-600 text-white font-semibold px-6 py-3 rounded-full transition-all shadow-md w-full">
+                    <i data-lucide="message-circle" class="w-5 h-5"></i>
+                    Kirim Pesan via WhatsApp
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-white border-t border-pink-100 py-8 px-6 text-center text-sm text-gray-500">
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
+            <div class="font-serif font-bold text-deepRose text-lg">
+                Nur Nailin Najah
+            </div>
+            <p>© 2026 Nur Nailin Najah. All rights reserved.</p>
+            <p class="text-xs text-gray-400">Siswi SMK Ma'arif NU Tirto - 12 TKJ 1</p>
+        </div>
+    </footer>
+
+    <!-- Initialize Lucide Icons -->
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
